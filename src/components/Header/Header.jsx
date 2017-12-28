@@ -12,6 +12,7 @@ export default class Header extends React.Component {
   }
 
   toggleActive(n){
+    this.props.selectMenu(n)
     this.setState({
       c_nav1: n === 1 ? 'nav_1 active' : 'nav_1',
       c_nav2: n === 2 ? 'nav_2 active' : 'nav_2',
@@ -23,10 +24,11 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <nav className="header__navbar">
-          <a className={this.state.c_nav1} onClick={() => this.toggleActive(1)}>Home</a>
-          <a className={this.state.c_nav2} onClick={() => this.toggleActive(2)}>Blog</a>
-          <a className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>About</a>
+          <button className={this.state.c_nav1} onClick={() => this.toggleActive(1)}>Home</button>
+          <button className={this.state.c_nav2} onClick={() => this.toggleActive(2)}>Blog</button>
+          <button className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>About</button>
         </nav>
-      </div>)
+      </div>
+    )
   }
 }
