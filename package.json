@@ -6,9 +6,7 @@
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "watch": "webpack --watch --config webpack.config.js",
-    "nodemon": "nodemon app.js",
-    "serve": "concurrently --kill-others \"npm run watch\" \"npm run nodemon\""
+    "watch": "webpack --watch --config webpack.config.js"
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -19,7 +17,6 @@
     "@babel/preset-env": "^7.0.0-beta.36",
     "@babel/preset-react": "^7.0.0-beta.36",
     "babel-loader": "8.0.0-beta.0",
-    "concurrently": "^3.5.1",
     "webpack": "^3.10.0"
   }
 }
