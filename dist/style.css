@@ -1,14 +1,16 @@
 .header {
   background-color: #333;
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden; }
 
 .header__navbar button {
   border: none;
+  font-weight: bold;
   float: left;
-  color: white;
+  color: #76daff;
   background-color: #333;
   text-align: center;
+  text-shadow: 1rem;
   padding: 1rem;
   font-size: 1rem;
   cursor: pointer; }
@@ -18,5 +20,5 @@
   color: black; }
 
 .header__navbar button.active {
-  background-color: #4CAF50;
-  color: white; }
+  background-color: #ddd;
+  color: black; }
