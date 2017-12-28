@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './pages/Home';
-import Blog from './pages/Blog';
+import Blog from './pages/Blog/Blog';
 import Header from './components/header/header';
 
 export default class App extends React.Component {
@@ -32,7 +32,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className='main'>
+      <div>
       <Header selectMenu={this.selectMenu}  />
        {this.renderSelectedMenu()}
       </div>
@@ -40,4 +40,4 @@ export default class App extends React.Component {
 };
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render(<App />, document.getElementById('app'));

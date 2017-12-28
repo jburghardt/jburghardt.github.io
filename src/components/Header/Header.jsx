@@ -26,7 +26,7 @@ export default class Header extends React.Component {
         <nav className="header__navbar">
           <button className={this.state.c_nav1} onClick={() => this.toggleActive(1)}>Home</button>
           <button className={this.state.c_nav2} onClick={() => this.toggleActive(2)}>Blog</button>
-          <button className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>About</button>
+          <button className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>Projects</button>
         </nav>
       </div>
     )

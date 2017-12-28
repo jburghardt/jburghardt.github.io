@@ -1,7 +1,21 @@
+.blog {
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; } }
+
 .header {
   background-color: #333;
   border-radius: 5px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 1rem; }
 
 .header__navbar button {
   border: none;
