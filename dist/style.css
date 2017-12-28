@@ -1,23 +1,24 @@
-.header__header_navbar {
+.header {
   background-color: #333;
+  border-radius: 3px;
   overflow: hidden; }
 
 /* Style the links inside the navigation bar */
-.header__header_navbar a {
+.header__navbar a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
   cursor: pointer; }
 
 /* Change the color of links on hover */
-.header__header_navbar a:hover {
+.header__navbar a:hover {
   background-color: #ddd;
   color: black; }
 
 /* Add a color to the active/current link */
-.header__header_navbar a.active {
+.header__navbar a.active {
   background-color: #4CAF50;
   color: white; }

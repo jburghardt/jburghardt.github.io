@@ -22,7 +22,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <nav className="header__header_navbar">
+        <nav className="header__navbar">
           <a className={this.state.c_nav1} onClick={() => this.toggleActive(1)}>Home</a>
           <a className={this.state.c_nav2} onClick={() => this.toggleActive(2)}>Blog</a>
           <a className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>About</a>
