@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/header/header';
 
 ReactDOM.render(
-  <div> 'under construction' </div>,
+  <Header/>,
   document.getElementById('container')
 );
