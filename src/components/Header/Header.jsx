@@ -24,11 +24,12 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <nav className="header__navbar">
-          <button className={this.state.c_nav1} onClick={() => this.toggleActive(1)}>Home</button>
-          <button className={this.state.c_nav2} onClick={() => this.toggleActive(2)}>Blog</button>
-          <button className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>Projects</button>
+          <button className={this.state.c_nav1} onClick={() => this.toggleActive(1)}>News</button>
+          <button className={this.state.c_nav2} onClick={() => this.toggleActive(2)}>foo</button>
+          <button className={this.state.c_nav3} onClick={() => this.toggleActive(3)}>bar</button>
         </nav>
       </div>
     )
+
   }
 }

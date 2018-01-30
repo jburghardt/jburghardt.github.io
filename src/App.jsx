@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './pages/Home';
 import Blog from './pages/Blog/Blog';
-import Header from './components/header/header';
+import Header from './components/Header/Header';
 
 export default class App extends React.Component {
 
@@ -22,10 +22,10 @@ export default class App extends React.Component {
 
   renderSelectedMenu() {
     if(this.state.activeMenu === 1) {
-      return <Home />
+      return <Blog />
     }
     if(this.state.activeMenu === 2) {
-      return <Blog />
+      return <Home />
     }
 
   }
