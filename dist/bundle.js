@@ -20315,17 +20315,27 @@ var Blog =
 function (_React$Component) {
   _inherits(Blog, _React$Component);
 
-  function Blog() {
+  function Blog(props) {
+    var _this;
+
     _classCallCheck(this, Blog);
 
-    return _possibleConstructorReturn(this, (Blog.__proto__ || Object.getPrototypeOf(Blog)).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, (Blog.__proto__ || Object.getPrototypeOf(Blog)).call(this, props));
+    _this.state = {
+      posts: []
+    };
+    return _this;
   }
 
   _createClass(Blog, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       _axios.default.get('./posts/testdown.md').then(function (r) {
-        return console.log(r.data);
+        return _this2.setState({
+          posts: [r.data]
+        });
       });
     }
   }, {
@@ -20333,7 +20343,11 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         className: "blog"
-      }, _react.default.createElement(_BlogEntry.default, null));
+      }, this.state.posts.map(function (e) {
+        return _react.default.createElement(_BlogEntry.default, {
+          source: e
+        });
+      }));
     }
   }]);
 
