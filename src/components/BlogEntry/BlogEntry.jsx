@@ -1,26 +1,12 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import axios from 'axios';
 
 export default class BlogEntry extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      entry: null
-    }
-  }
-
-
-componentDidMount(){
-  console.log('mounting')
-  axios.get('/home/jo/workspace/omRm.github.io/src/assets/testdown.md')
-    .then(res => this.setState({entry: res.data}))
-}
 
   render() {
     return (
       <div className="blog-entry">
-      {this.state.entry ?  <ReactMarkdown source={this.state.entry}/> : null }
+      {this.props.source ?  <ReactMarkdown source={this.props.source}/> : null }
       </div>
     )
   }
